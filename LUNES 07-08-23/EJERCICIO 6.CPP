@@ -16,10 +16,10 @@ int main(){
     tasaInteres = interesAnual;
     tasaMensual = tasaInteres / 12 / 100;
 
-    // Calcular el número total de pagos (meses)
+    // Calcular el número total de pagos
     plazo = cantidadAhos * 12;
 
-    // Calcular el valor del importe a cancelar en cada periodo
+    // Calcular el valor del importe
     pagoMensual = monto * (tasaMensual / (1 - pow(1 + tasaMensual, -plazo)));
     cout << "El pago mensual es: " << pagoMensual << endl;
     return 0;
